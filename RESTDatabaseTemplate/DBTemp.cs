@@ -15,9 +15,8 @@ namespace RESTDatabaseTemplate
         //Parameterized Constructor 
         //Har ingen returtype
         //Dem der er i () hedder Arguments
-        //public DBTemp(int dbTempId, string firstName, string lastName)
+        //public DBTemp(string firstName, string lastName)
         //{
-        //    DBTempID = dbTempId;
         //    FirstName = firstName;
         //    LastName = lastName;
         //}
