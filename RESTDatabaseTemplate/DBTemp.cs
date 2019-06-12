@@ -15,14 +15,14 @@ namespace RESTDatabaseTemplate
         //Parameterized Constructor 
         //Har ingen returtype
         //Dem der er i () hedder Arguments
-        //public DBTemp(string firstName, string lastName)
-        //{
-        //    FirstName = firstName;
-        //    LastName = lastName;
-        //}
+        public DBTemp(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
 
         //Tøm Constructor
-        //public DBTemp() { }
+        public DBTemp() { }
 
         // Eksempel
         //JsonConstructor Attribute to tell that when creating objects from POST calls they need to use this.

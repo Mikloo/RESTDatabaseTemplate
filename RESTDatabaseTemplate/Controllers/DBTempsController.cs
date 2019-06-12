@@ -98,7 +98,7 @@ namespace RESTDatabaseTemplate.Controllers
         [HttpPost]
         public int AddDBTemp([FromBody] DBTemp value)
         {
-            const string insertString = "insert into book (FirstName, LastName) values (@firstName, @lastName)";
+            const string insertString = "insert into DBTemp (FirstName, LastName) values (@firstName, @lastName)";
             using (SqlConnection databaseConnection = new SqlConnection(ConnectionString))
             {
                 databaseConnection.Open();
@@ -117,7 +117,7 @@ namespace RESTDatabaseTemplate.Controllers
         public int UpdateDBTemp(int id, [FromBody] DBTemp value)
         {
             const string updateString =
-                "update DBTemp set FirstName=@title, LastName=@author where Id=@id";
+                "update DBTemp set FirstName=@firstName, LastName=@lastName where Id=@id";
             using (SqlConnection databaseConnection = new SqlConnection(ConnectionString))
             {
                 databaseConnection.Open();

@@ -26,7 +26,37 @@ namespace UnitTestDBTemp
 
             var resultat = dbTemps.GetAllTemp();
 
-            Assert.AreEqual(3, resultat.Count());
+            Assert.AreEqual(2, resultat.Count());
+        }
+
+        [TestMethod]
+        public void addd()
+        {
+            DBTempsController dbTemps = new DBTempsController();
+
+            DBTemp me = new DBTemp("Mikailll", "LLLLLLL");
+
+            var resultat = dbTemps.AddDBTemp(me);
+
+            var resultat1 = dbTemps.GetAllTemp();
+
+            Assert.AreEqual(3, resultat1.Count());
+
+        }
+
+        [TestMethod]
+        public void put()
+        {
+            DBTempsController dbTemps = new DBTempsController();
+
+            DBTemp me = new DBTemp("1", "2");
+
+            var resultat = dbTemps.UpdateDBTemp(4, me);
+
+            var resultat3 = dbTemps.GetDBTempById(4).LastName;
+
+            Assert.AreEqual("2", resultat3);
+
         }
     }
 }
