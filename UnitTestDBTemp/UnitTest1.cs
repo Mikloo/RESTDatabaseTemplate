@@ -49,13 +49,13 @@ namespace UnitTestDBTemp
         {
             DBTempsController dbTemps = new DBTempsController();
 
-            DBTemp me = new DBTemp("1", "2");
+            DBTemp me = new DBTemp("Greek", "Godx");
 
             var resultat = dbTemps.UpdateDBTemp(4, me);
 
             var resultat3 = dbTemps.GetDBTempById(4).LastName;
 
-            Assert.AreEqual("2", resultat3);
+            Assert.AreEqual("Godx", resultat3);
 
         }
     }
