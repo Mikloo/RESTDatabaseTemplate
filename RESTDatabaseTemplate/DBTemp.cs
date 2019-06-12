@@ -22,7 +22,7 @@ namespace RESTDatabaseTemplate
         }
 
         //Tøm Constructor
-        public DBTemp() { }
+        public DBTemp() { } //empty constructor needed for JSON transfer. Serializable objects.
 
         // Eksempel
         //JsonConstructor Attribute to tell that when creating objects from POST calls they need to use this.
